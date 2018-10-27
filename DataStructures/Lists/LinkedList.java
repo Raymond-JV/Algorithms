@@ -1,5 +1,3 @@
-package structures.lists;
-
 import java.util.NoSuchElementException;
 
 public class LinkedList<T> {
@@ -58,10 +56,9 @@ public class LinkedList<T> {
         return tmp.data;
     }
 
-    private T verify_index(Node<T> index) {
+    private void verify_index(Node<? extends T> index) {
         if (index == null)
             throw new IndexOutOfBoundsException("Index cannot exceed size of list minus 1!");
-        return index.data;
     }
 
     private class Node<V> {
