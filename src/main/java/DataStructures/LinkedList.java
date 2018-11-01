@@ -1,3 +1,5 @@
+package DataStructures;
+
 import java.util.NoSuchElementException;
 
 public class LinkedList<T> {
@@ -62,6 +64,7 @@ public class LinkedList<T> {
     }
 
     private class Node<V> {
+
         V data;
         Node<V> next;
 

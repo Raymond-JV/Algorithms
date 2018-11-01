@@ -1,3 +1,5 @@
+package DataStructures;
+
 import java.util.NoSuchElementException;
 
 public class BinarySearchTree<T extends Comparable<T>> {
@@ -31,6 +33,7 @@ public class BinarySearchTree<T extends Comparable<T>> {
         }
     }
 
+    //Iterative Delete
     void removeIter(T data) {
 
         Node<T> current = root;
@@ -81,7 +84,7 @@ public class BinarySearchTree<T extends Comparable<T>> {
         }
     }
 
-    //recursive
+    //Recursive Delete
     public void removeRecursive(T data) {
         removeNode(root, data);
     }
